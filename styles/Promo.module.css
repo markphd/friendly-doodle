@@ -1,0 +1,58 @@
+.promo {
+  line-height: 1.6em;
+  text-align: left;
+  background: #eee;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 40px;
+  justify-content: center;
+}
+
+.headline {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: black;
+  grid-column: 2/3;
+  font-weight: 600;
+  font-size: small;
+  margin: 20px 0 0 0;
+}
+
+.hed {
+  text-transform: uppercase;
+  font-size: small;
+  grid-column: 2/3;
+}
+
+.body {
+  max-width: 50ch;
+  margin: 0;
+  letter-spacing: 0.034em;
+  font-size: smaller;
+}
+
+.productm {
+  background-image: url("../public/static/bottle-men.png");
+  background-size: contain;
+  grid-row: 1/8;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.productw {
+  background-image: url("../public/static/bottle-women.png");
+  background-size: contain;
+  grid-row: 1/8;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.productu {
+  background-image: url("../public/static/bottle-unisex.png");
+  background-size: contain;
+  grid-row: 1/8;
+  background-position: center;
+  background-repeat: no-repeat;
+}

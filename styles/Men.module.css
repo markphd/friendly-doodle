@@ -1,0 +1,103 @@
+.container {
+  background-color: #fff;
+  border: 10px solid black;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+}
+
+.photo {
+  min-height: 350px;
+  background-image: url("../public/static/cover-men.jpg");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heading {
+  font-family: acumin-pro-wide, sans-serif;
+  font-size: 12em;
+  color: rgb(233, 233, 233);
+  text-align: center;
+  letter-spacing: -0.07em;
+  margin: 0;
+}
+
+.subheading {
+  padding: 20px 0;
+  text-align: center;
+  font-family: acumin-pro-condensed, sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.marketing {
+  padding: 4em;
+  background-image: url("../public/static/marketing-cover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.marketingbox {
+  max-width: 900px;
+  margin: 0;
+  padding: 0;
+  border: 5px solid #000;
+  display: flex;
+}
+
+.figure {
+  background-color: #4a4a3878;
+  object-fit: contain;
+}
+
+.figure > img {
+  height: 100%;
+  width: 100%;
+}
+
+.headline {
+  font-weight: 100;
+  font-family: acumin-pro-condensed, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  padding: 5%;
+}
+
+.hed {
+  font-family: acumin-pro-wide, sans-serif;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.price {
+  width: 80px;
+  height: 80px;
+  align-self: center;
+  color: white;
+  background-color: black;
+  display: flex;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  line-height: 1.6em;
+  font-family: acumin-pro, sans-serif;
+  text-align: center;
+  background: #fff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: center;
+}

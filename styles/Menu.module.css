@@ -1,0 +1,185 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  color: #fff;
+}
+
+.menu > button {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 20px;
+  border-radius: 80px;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 80px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  justify-content: space-between;
+  cursor: pointer;
+  transition-property: transform, background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0, 1);
+  outline: none;
+}
+
+.menu > button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.menu > button[data-theme="dark"] {
+  filter: invert(100%);
+}
+
+/* .menu > button::after {
+  height: 100px;
+  position: absolute;
+  background-color: rgba(70, 70, 70, 0.4);
+  content: "";
+  top: 20px;
+  left: 70px;
+  width: 0;
+} */
+
+/* .menu[data-toggle="false"] > button:hover::after {
+  width: 300px;
+  transition-property: width;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0, 1);
+  content: "MENU";
+} */
+
+.menu[data-toggle="false"] > button > span {
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0, 1);
+}
+
+.menu[data-toggle="false"] > button:hover > span {
+  transform: scaleX(1.4);
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0, 1);
+}
+
+.menu[data-toggle="true"] > button > span:first-child {
+  transform: rotate(45deg) translateX(5px);
+  transform-origin: 12px;
+  transition-property: transform;
+  transition-duration: 0.1s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0, 1);
+}
+
+.menu[data-toggle="true"] > button > span:last-child {
+  transform: rotate(-45deg) translateX(5px);
+  transform-origin: 12px;
+  transition-property: transform;
+  transition-duration: 0.1s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0, 1);
+}
+
+.menu > button > span {
+  height: 1px;
+  color: white;
+  border-bottom: 2px solid #fff;
+  width: 40px;
+}
+
+.overlay {
+  min-height: 100vh;
+  height: 100%;
+  width: 50rem;
+  position: absolute;
+  z-index: -5;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay > ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  grid-template-rows: auto 1fr;
+  padding: 0;
+}
+
+.pages {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menulink {
+  color: white;
+  list-style: none;
+  font-size: x-large;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: acumin-pro-semi-condensed, sans-serif;
+  cursor: pointer;
+}
+
+.fullOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(70, 70, 70, 0.7);
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+}
+
+.social {
+  color: #5e5e5e;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10em;
+}
+
+.socialurl {
+  display: block;
+  list-style: none;
+  font-size: large;
+  text-transform: lowercase;
+  padding: 2em;
+}
+
+@media (max-width: 30em) {
+  .menu > button {
+    transform: scale(0.5);
+    z-index: 100;
+    top: -20px;
+    left: -20px;
+    margin: 0;
+  }
+
+  .overlay {
+    width: 100vw;
+  }
+
+  .social {
+    flex-direction: column;
+  }
+
+  .socialurl {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: medium;
+  }
+}

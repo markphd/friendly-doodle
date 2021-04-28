@@ -1,0 +1,160 @@
+.container {
+  background-image: url("../public/static/page-cover-order.jpg");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  border: 10px solid black;
+  border-bottom: none;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+}
+
+.heading {
+  font-family: "Acumin Pro Wide Bold";
+  font-size: 9em;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing: -0.045em;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 6% 0 2%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.subheading {
+  padding: 1em 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+.highlight {
+  display: flex;
+  justify-content: center;
+}
+
+.marketing {
+  padding: 4em;
+  background-image: url("../public/static/marketing-cover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.marketingbox {
+  /* background: #fff; */
+  max-width: 900px;
+  margin: 0;
+  border: 5px solid #000;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.marketingstrip {
+  /* background-color: #888; */
+  color: black;
+  margin: 0;
+}
+
+.figure {
+  background-color: #4a4a3878;
+  object-fit: contain;
+}
+
+.figure > img {
+  height: 100%;
+  width: 100%;
+  object-position: -10px;
+}
+
+.headline {
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  padding: 5%;
+}
+
+.hed {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: medium;
+  grid-column: 1/ 1;
+  text-align: center;
+}
+
+.price {
+  width: 120px;
+  height: 120px;
+  margin: 50px 40px 0;
+  align-self: center;
+  color: black;
+  background-color: white;
+  display: flex;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #000;
+  font-size: larger;
+}
+
+.paragraph {
+  line-height: 1.6em;
+  text-align: center;
+  margin: 0;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 1/-1;
+  grid-row: 3 / 5;
+}
+
+.symbol {
+  color: #ccc;
+  font-size: large;
+}
+
+@media (max-width: 30em) {
+  .container {
+    border: none;
+  }
+  .heading {
+    padding-top: 10%;
+    font-size: 5em;
+  }
+
+  .marketing {
+    padding: 1em;
+  }
+
+  .figure {
+    grid-column: 1 / -1;
+  }
+
+  .figure > img {
+    object-position: -5px;
+  }
+}
+/* 
+@media (max-width: 90em) {
+  .photo {
+    min-height: 550px;
+    width: 100%;
+    background-size: 100%;
+  }
+} */

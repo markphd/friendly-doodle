@@ -1,0 +1,78 @@
+.container {
+  background-color: white;
+}
+
+.item {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  grid-template-columns: 1fr 1fr 2fr 2fr 1fr 2fr 1fr;
+  margin: 10px 0;
+  grid-gap: 10px;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+.bottle {
+  grid-column: 2/2;
+  background-color: rgb(240, 240, 240);
+}
+
+.qty {
+  display: flex;
+  grid-column: 5/5;
+}
+
+.price {
+  font-family: 'Acumin Pro Wide';
+  font-size: larger;
+  text-align: center;
+  align-self: center;
+  font-weight: bold;
+}
+
+.description {
+  /* padding: 2% 10%; */
+  background-color: #f0f0f0;
+  padding: 0 20px;
+  grid-column: 3/5;
+  font-family: acumin-pro-condensed, sans-serif;
+}
+
+.counterinput {
+  text-align: center;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-top: none;
+  border-bottom: none;
+  outline: none;
+  box-shadow: none;
+  width: 100px;
+}
+
+.counteradd,
+.counterminus {
+  outline: none;
+  border-radius: unset;
+  border: none;
+}
+
+.clearitem {
+  color: crimson;
+  padding: 0;
+  border: none;
+  text-align: left;
+}
+
+@media (max-width: 30em) {
+  .cart {
+    transform: scale(0.5);
+    z-index: 100;
+    top: -1px;
+    right: -10px;
+    margin: 0;
+  }
+}
